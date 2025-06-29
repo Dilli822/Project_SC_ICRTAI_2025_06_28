@@ -1,0 +1,124 @@
+(env) dilli@MacBookAir icrtai_mobileone % ls
+__pycache__                             index1.html                             step_10_10_totensor_+_normalize.png     step_8_8_grayscale.png
+data_augmentation_steps.png             index3.html                             step_2_2_resize.png                     step_9_9_sharpness.png
+data_augmentation.py                    logs                                    step_3_3_randomresizedcrop.png          testing
+Filtering                               mobileone.py                            step_4_4_horizontal_flip.png            torchMobileOne+GRU.py
+FINAL.html                              mobileOne+GRU_.py                       step_5_5_vertical_flip.png              torchModel.py
+FINal2.html                             Models                                  step_6_6_rotation.png                   training
+index.html                              step_1_1_median_filter.png              step_7_7_colorjitter.png
+(env) dilli@MacBookAir icrtai_mobileone % python torchmodel.py
+Using device: mps
+Classes: ['benign', 'malignant']
+Number of classes: 2
+Length of train dataloader: 385 batches of 24
+Length of test dataloader: 83 batches of 24
+Length of val dataloader: 83 batches of 24
+Loading checkpoint from: /Users/dilli/Desktop/mobilenetv4.pytorch/mobileone_s4_unfused.pth.tar
+Creating model with ImageNet structure to load pretrained weights...
+Pretrained weights loaded successfully
+Model created with 2 classes using pretrained features
+Starting training...
+Epoch 1/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.33978 | Train Acc: 0.84993 | Test Loss: 0.26450 | Test Acc: 0.88755 | Val Loss: 0.26283 | Val Acc: 0.88554
+Saved best model by loss at epoch 1 with test loss 0.26450
+Saved best model by accuracy at epoch 1 with test acc 0.88755
+Epoch 2/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.27772 | Train Acc: 0.88240 | Test Loss: 0.28763 | Test Acc: 0.87600 | Val Loss: 0.26899 | Val Acc: 0.88655
+Epoch 3/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.25165 | Train Acc: 0.89693 | Test Loss: 0.23655 | Test Acc: 0.89910 | Val Loss: 0.23890 | Val Acc: 0.90161
+Saved best model by loss at epoch 3 with test loss 0.23655
+Saved best model by accuracy at epoch 3 with test acc 0.89910
+Epoch 4/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.23742 | Train Acc: 0.90119 | Test Loss: 0.23002 | Test Acc: 0.90110 | Val Loss: 0.22258 | Val Acc: 0.90311
+Saved best model by loss at epoch 4 with test loss 0.23002
+Saved best model by accuracy at epoch 4 with test acc 0.90110
+Epoch 5/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.22077 | Train Acc: 0.90747 | Test Loss: 0.26587 | Test Acc: 0.89508 | Val Loss: 0.24980 | Val Acc: 0.89608
+Epoch 6/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.21118 | Train Acc: 0.91299 | Test Loss: 0.20588 | Test Acc: 0.91767 | Val Loss: 0.21435 | Val Acc: 0.91114
+Saved best model by loss at epoch 6 with test loss 0.20588
+Saved best model by accuracy at epoch 6 with test acc 0.91767
+Epoch 7/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.20926 | Train Acc: 0.91335 | Test Loss: 0.21417 | Test Acc: 0.91165 | Val Loss: 0.20478 | Val Acc: 0.91416
+Epoch 8/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.19358 | Train Acc: 0.92157 | Test Loss: 0.25133 | Test Acc: 0.89558 | Val Loss: 0.23248 | Val Acc: 0.90412
+Epoch 9/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.19628 | Train Acc: 0.91973 | Test Loss: 0.20803 | Test Acc: 0.91416 | Val Loss: 0.21405 | Val Acc: 0.90612
+Epoch 10/25
+Current Learning Rate: 0.000100                                                                                                                                        
+Train Loss: 0.19068 | Train Acc: 0.91941 | Test Loss: 0.23472 | Test Acc: 0.90813 | Val Loss: 0.22827 | Val Acc: 0.90663
+Epoch 11/25
+Current Learning Rate: 0.000010                                                                                                                                        
+Train Loss: 0.17808 | Train Acc: 0.92518 | Test Loss: 0.23084 | Test Acc: 0.91165 | Val Loss: 0.24635 | Val Acc: 0.91014
+Epoch 12/25
+Current Learning Rate: 0.000010                                                                                                                                        
+Train Loss: 0.14090 | Train Acc: 0.93950 | Test Loss: 0.21950 | Test Acc: 0.92169 | Val Loss: 0.22960 | Val Acc: 0.91817
+Saved best model by accuracy at epoch 12 with test acc 0.92169
+Epoch 13/25
+Current Learning Rate: 0.000010                                                                                                                                        
+Train Loss: 0.13269 | Train Acc: 0.94722 | Test Loss: 0.21445 | Test Acc: 0.91968 | Val Loss: 0.22078 | Val Acc: 0.91717
+Epoch 14/25
+Current Learning Rate: 0.000010                                                                                                                                        
+Train Loss: 0.11788 | Train Acc: 0.95278 | Test Loss: 0.22119 | Test Acc: 0.92269 | Val Loss: 0.23404 | Val Acc: 0.91616
+Saved best model by accuracy at epoch 14 with test acc 0.92269
+Epoch 15/25
+Current Learning Rate: 0.000010                                                                                                                                        
+Train Loss: 0.11450 | Train Acc: 0.95227 | Test Loss: 0.22332 | Test Acc: 0.91968 | Val Loss: 0.23010 | Val Acc: 0.91516
+Epoch 16/25
+Current Learning Rate: 0.000001                                                                                                                                        
+Train Loss: 0.10723 | Train Acc: 0.95747 | Test Loss: 0.22889 | Test Acc: 0.91968 | Val Loss: 0.22825 | Val Acc: 0.91918
+Epoch 17/25
+Current Learning Rate: 0.000001                                                                                                                                        
+Train Loss: 0.10221 | Train Acc: 0.96061 | Test Loss: 0.23365 | Test Acc: 0.91968 | Val Loss: 0.23086 | Val Acc: 0.91817
+Epoch 18/25
+Current Learning Rate: 0.000001                                                                                                                                        
+Train Loss: 0.10678 | Train Acc: 0.95743 | Test Loss: 0.22717 | Test Acc: 0.92068 | Val Loss: 0.23111 | Val Acc: 0.91867
+Epoch 19/25
+Current Learning Rate: 0.000001                                                                                                                                        
+Train Loss: 0.10162 | Train Acc: 0.96003 | Test Loss: 0.23355 | Test Acc: 0.92169 | Val Loss: 0.23219 | Val Acc: 0.91867
+Epoch 20/25
+Current Learning Rate: 0.000001                                                                                                                                        
+Train Loss: 0.10414 | Train Acc: 0.95848 | Test Loss: 0.23635 | Test Acc: 0.92219 | Val Loss: 0.24063 | Val Acc: 0.91767
+Epoch 21/25
+Current Learning Rate: 0.000000                                                                                                                                        
+Train Loss: 0.10184 | Train Acc: 0.95725 | Test Loss: 0.22895 | Test Acc: 0.92118 | Val Loss: 0.23466 | Val Acc: 0.92068
+Epoch 22/25
+Current Learning Rate: 0.000000                                                                                                                                        
+Train Loss: 0.10149 | Train Acc: 0.95952 | Test Loss: 0.22713 | Test Acc: 0.91968 | Val Loss: 0.23015 | Val Acc: 0.91817
+Epoch 23/25
+Current Learning Rate: 0.000000                                                                                                                                        
+Train Loss: 0.10102 | Train Acc: 0.96176 | Test Loss: 0.23267 | Test Acc: 0.92118 | Val Loss: 0.23558 | Val Acc: 0.91968
+Epoch 24/25
+Current Learning Rate: 0.000000                                                                                                                                        
+Train Loss: 0.09647 | Train Acc: 0.96248 | Test Loss: 0.22429 | Test Acc: 0.92219 | Val Loss: 0.22974 | Val Acc: 0.91968
+Epoch 25/25
+Current Learning Rate: 0.000000                                                                                                                                        
+Train Loss: 0.10291 | Train Acc: 0.96071 | Test Loss: 0.23060 | Test Acc: 0.92068 | Val Loss: 0.23698 | Val Acc: 0.91616
+Saving model to: models/mobileone_trained_model.pth
+(env) dilli@MacBookAir icrtai_mobileone % 
+
+
+(env) dilli@MacBookAir testing % python test_mobileone.py
+🔋 Using device: mps
+🌀 Model loaded and being evaluated...
+📋 Classification Report:
+
+              precision    recall  f1-score   support
+
+      benign     0.8983    0.9656    0.9307       988
+   malignant     0.9628    0.8907    0.9253       988
+
+    accuracy                         0.9281      1976
+   macro avg     0.9306    0.9281    0.9280      1976
+weighted avg     0.9306    0.9281    0.9280      1976
+
+✅ Overall Accuracy: 0.9281
