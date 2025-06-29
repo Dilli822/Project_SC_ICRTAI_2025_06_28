@@ -1,0 +1,43 @@
+(env) dilli@MacBookAir icrtai_mobileone % python torchmobileone+gru.py
+📱Using device: mps
+Classes: ['benign', 'malignant']
+Number of classes: 2
+Length of train dataloader: 578 batches of 16
+Length of test dataloader: 124 batches of 16
+Length of val dataloader: 124 batches of 16
+Loading pretrained MobileOne weights from: /Users/dilli/Desktop/mobilenetv4.pytorch/mobileone_s4_unfused.pth.tar
+Pretrained MobileOne weights loaded successfully
+Model created with 2 classes
+Feature extractor frozen: True
+GRU trainable parameters: 2,165,760
+Classifier trainable parameters: 66,306
+Starting training with MobileOne + GRU architecture...
+Epoch 1/20
+Train Loss: 0.41405 | Train Acc: 0.81455 | Val Loss: 0.36332 | Val Acc: 0.82863 | Test Loss: 0.35179 | Test Acc: 0.84173                                 
+Saved best model by loss at epoch 1 with test loss 0.35179
+Saved best model by accuracy at epoch 1 with test acc 0.84173
+Saved best model by validation accuracy at epoch 1 with val acc 0.82863
+Epoch 2/20
+Train Loss: 0.37579 | Train Acc: 0.83737 | Val Loss: 0.33352 | Val Acc: 0.85181 | Test Loss: 0.31478 | Test Acc: 0.86996                                 
+Saved best model by loss at epoch 2 with test loss 0.31478
+Saved best model by accuracy at epoch 2 with test acc 0.86996
+Saved best model by validation accuracy at epoch 2 with val acc 0.85181
+Epoch 3/20
+Train Loss: 0.37066 | Train Acc: 0.83683 | Val Loss: 0.32012 | Val Acc: 0.85887 | Test Loss: 0.30760 | Test Acc: 0.87097                                 
+Saved best model by loss at epoch 3 with test loss 0.30760
+Saved best model by accuracy at epoch 3 with test acc 0.87097
+Saved best model by validation accuracy at epoch 3 with val acc 0.85887
+
+Epoch 4/20
+Train Loss: 0.35477 | Train Acc: 0.84851 | Val Loss: 0.33920 | Val Acc: 0.84325 | Test Loss: 0.32522 | Test Acc: 0.86190                                 
+Epoch 5/20
+Train Loss: 0.35159 | Train Acc: 0.84937 | Val Loss: 0.32691 | Val Acc: 0.85383 | Test Loss: 0.31435 | Test Acc: 0.86290                                 
+Epoch 6/20
+Train Loss: 0.35163 | Train Acc: 0.84937 | Val Loss: 0.32147 | Val Acc: 0.86190 | Test Loss: 0.32684 | Test Acc: 0.87500                                 
+Saved best model by accuracy at epoch 6 with test acc 0.87500
+Saved best model by validation accuracy at epoch 6 with val acc 0.86190
+Epoch 7/20
+Train Loss: 0.34578 | Train Acc: 0.85294 | Val Loss: 0.32859 | Val Acc: 0.86139 | Test Loss: 0.31889 | Test Acc: 0.87752                                 
+Saved best model by accuracy at epoch 7 with test acc 0.87752
+Epoch 8/20
+Train Loss: 0.32642 | Train Acc: 0.86051 | Val Loss: 0.29769 | Val Acc: 0.86492 | Test Loss: 0.29164 | Test Acc: 0.87651      
